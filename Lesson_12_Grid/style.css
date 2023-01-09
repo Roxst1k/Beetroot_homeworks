@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Delius Unicase', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: 120px auto 80px;
+}
+
+.gallery-architectural,
+.gallery-still-life,
+.gallery-portrait {
+    width: 1170px;
+    /*height: 1170px;*/
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 370px 370px 370px;
+    grid-gap: 30px;
+}
+
+
+
+.gallery-architectural__item-first {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_architectural/Jezael_Melgoza.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-architectural__item-second {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2 ;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_architectural/Tom_W.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-architectural__item-third {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_architectural/Johan_Mouchet.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-architectural__item-fourth {
+    grid-column: 3 / 4 ;
+    grid-row: 2 / 3;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_architectural/Federico_Di_Dio.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-architectural__item-fifth {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_architectural/Casey_Horner.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-architectural__item-sixth {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_architectural/Alexander_Rotker.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+
+.wrapper-icon {
+    width: 370px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+
+.icon {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    display: none;
+}
+
+
+.gallery-architectural__item-first:hover,
+.gallery-architectural__item-second:hover,
+.gallery-architectural__item-third:hover,
+.gallery-architectural__item-fourth:hover,
+.gallery-architectural__item-fifth:hover,
+.gallery-architectural__item-sixth:hover,
+.gallery-still-life__item-first:hover,
+.gallery-still-life__item-second:hover,
+.gallery-still-life__item-third:hover,
+.gallery-still-life__item-fourth:hover,
+.gallery-still-life__item-fifth:hover,
+.gallery-still-life__item-sixth:hover,
+.gallery-portrait__item-first:hover,
+.gallery-portrait__item-second:hover,
+.gallery-portrait__item-third:hover,
+.gallery-portrait__item-fourth:hover,
+.gallery-portrait__item-fifth:hover,
+.gallery-portrait__item-sixth:hover,
+.gallery-portrait__item-seventh:hover,
+.gallery-portrait__item-eighth:hover,
+.gallery-portrait__item-ninth:hover,
+.gallery-portrait__item-tenth:hover {
+    opacity: 1;
+}
+
+.gallery-architectural__item-first:hover .icon,
+.gallery-architectural__item-second:hover .icon,
+.gallery-architectural__item-third:hover .icon,
+.gallery-architectural__item-fourth:hover .icon,
+.gallery-architectural__item-fifth:hover .icon,
+.gallery-architectural__item-sixth:hover .icon,
+.gallery-still-life__item-first:hover .icon,
+.gallery-still-life__item-second:hover .icon,
+.gallery-still-life__item-third:hover .icon,
+.gallery-still-life__item-fourth:hover .icon,
+.gallery-still-life__item-fifth:hover .icon,
+.gallery-still-life__item-sixth:hover .icon,
+.gallery-portrait__item-first:hover .icon,
+.gallery-portrait__item-second:hover .icon,
+.gallery-portrait__item-third:hover .icon,
+.gallery-portrait__item-fourth:hover .icon,
+.gallery-portrait__item-fifth:hover .icon,
+.gallery-portrait__item-sixth:hover .icon,
+.gallery-portrait__item-seventh:hover .icon,
+.gallery-portrait__item-eighth:hover .icon,
+.gallery-portrait__item-ninth:hover .icon,
+.gallery-portrait__item-tenth:hover .icon {
+    display: block;
+    cursor: pointer;
+}
+
+.icon:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper-description {
+    width: 370px;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/*.bigsize {*/
+/*    width: 770px;*/
+/*}*/
+
+.description__author {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15em;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.description__date {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15em;
+    color: #E0E0E0;
+    margin-right: 20px;
+}
+
+/*Section Still Life Photography*/
+
+.gallery-still-life {
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 370px 770px 370px;
+}
+
+.gallery-still-life__item-first {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_Still/Robert_Lukeman.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-still-life__item-second {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_Still/Sean_Oulashin.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-still-life__item-third {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_Still/John_Fowler.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-still-life__item-fourth {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_Still/Dave_Hoefler.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-still-life__item-fifth {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_Still/Léonard_Cotte.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-still-life__item-sixth {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_Still/Rob_Mulally.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+/*Section Portrait and Fashion Photography*/
+
+.gallery-portrait {
+    grid-template-rows: repeat(5, 370px);
+    margin-bottom: 120px;
+}
+
+.gallery-portrait__item-first {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Pooja_Chaudhary.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-second {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Dom_Hill.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-third {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Seth_Doyle.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-fourth {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/devn.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-fifth {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Noah_Buscher.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-sixth {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Sincerely_Media.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-seventh {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Seth_Doyle2.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-eighth {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Melissa_Askew.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-ninth {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Brooke_Cagle.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.gallery-portrait__item-tenth {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    position: relative;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(./img/section_portrait/Clem_Onojeghuo.jpg) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.bigsize {
+    width: 770px;
+}
