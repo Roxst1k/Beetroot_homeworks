@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 1440px;
+    height: 80px;
+    margin: 0 auto 70px;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px auto;
+}
+
+.container__left {
+    display: flex;
+}
+
+.text-language {
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 0.82em;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.navigation {
+    margin-left: 50px;
+}
+
+.navigation__list {
+    display: flex;
+
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.27em;
+    letter-spacing: 0.03em;
+}
+
+.navigation__item {
+    list-style: none;
+    margin-right: 10px;
+}
+
+
+.navigation__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container__right {
+    width: 238px;
+    height: 54px;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.chapter_one,
+.chapter_two,
+.chapter_three{
+    margin-bottom: 70px;
+}
+
+.chapter-title {
+    display: inline-block;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.33em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+
+.chapter-subtitle {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    /*font-size: 22px;*/
+    line-height: 1em;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+sup {
+    vertical-align: top;
+}
+
+.chapter-paragraph {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.71em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.chapter-paragraph_underline {
+    text-decoration: underline;
+}
+
+.chapter-paragraph_italic {
+    font-style: italic;
+}
+
+.chapter-paragraph_bold {
+    font-weight: 700;
+}
+
+.chapter-paragraph_background-grey {
+    background-color: #DADADA;
+}
+
+.chapter_four {
+    margin-bottom: 90px;
+}
