@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: fixed;
+    background: white;
+    z-index: 1;
+    left: 40px;
+}
+
+.content-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    /*width: 385px;*/
+    height: 462px;
+    margin-right: 30px;
+    margin-top: 150px;
+    position: sticky;
+    top: 80px;
+    padding: 10px;
+}
+
+.aside-item {
+    width: 379px;
+    height: 58px;
+    border-bottom: 1px solid grey;
+}
+
+.main {
+    width: 785px;
+    margin-top: 150px;
+}
+
+.chapter-title {
+    text-decoration: none;
+}
+
+.chapter-header-wrapper {
+    width: 344px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chapter_one,
+.chapter_two,
+.chapter_three,
+.chapter_four{
+    width: 785px;
+    position: relative;
+}
+
+.divider {
+    width: 100px;
+    height: 8px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h2{
+    margin-top: 28px;
+}
+
+.chapter-subtitle {
+    line-height: 4.5em;
+}
+
+.background {
+    width: 760px;
+    height: 760px;
+    background-image: url("./img/bg-picture.svg");
+    background-repeat: no-repeat ;
+    background-position-x: 5vh ;
+    position: fixed;
+    margin-left: 260px;
+    z-index: -1;
+}
+
+
