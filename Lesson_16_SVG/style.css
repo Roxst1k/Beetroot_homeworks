@@ -208,33 +208,3 @@ body {
 }
 
 
-
-
-
-/*.social {*/
-/*    width: 230px;*/
-/*    height: 38px;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*.social-card {*/
-/*    width: 38px;*/
-/*    height: 38px;*/
-/*    position: relative;*/
-/*}*/
-
-/*.social-icon_hover {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*}*/
-
-/*.social-card:hover .social-icon {*/
-/*    display: none;*/
-/*}*/
-
-/*.social-card:hover .social-icon_hover {*/
-/*    display: block;*/
-/*}*/
