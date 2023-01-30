@@ -1,0 +1,203 @@
+@import "normalize.scss";
+//@import "variable";
+@import "mixin";
+
+
+body {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.main {
+  width: 1170px;
+  margin: 121px auto;
+}
+
+.header {
+  width: 450px;
+  margin: 0 auto 40px;
+  text-align: center;
+
+  &-subtitle {
+    @include main-text(18px, 500, #898F8F, 1.33em);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &-title {
+    @include header-text(60px, 1.1em, $gold-color);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+
+.image {
+  width: 450px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 auto;
+  display: inline-block;
+
+  &:before {
+    @include big-line;
+    top: -10px;
+    left: -5px;
+  }
+
+  &:after {
+    @include big-line;
+    top: -10px;
+    right: -5px;
+  }
+}
+
+.content {
+  width: 1030px;
+  height: 560px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left {
+  width: 430px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 85px;
+}
+
+.photo {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.left-top {
+  @include background-line;
+  border-top: $line-decoration;
+  border-left: $line-decoration;
+  top: -15px;
+  left: -15px;
+}
+
+.right-top {
+  @include background-line;
+  border-top: $line-decoration;
+  border-right: $line-decoration;
+  top: -15px;
+  right: -15px;
+}
+
+
+.right-bottom {
+  @include background-line;
+  border-bottom: $line-decoration;
+  border-right: $line-decoration;
+  bottom: -15px;
+  right: -15px;
+}
+
+.left-bottom {
+  @include background-line;
+  border-bottom: $line-decoration;
+  border-left: $line-decoration;
+  bottom: -15px;
+  left: -15px;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  border-right: $line-decoration;
+  margin-right: 85px;
+}
+
+.right {
+  width: 430px;
+  height: 420px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info {
+  width: 283px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.content-title {
+  @include header-text(36px, 1.17em, #666666);
+  margin-bottom: 30px;
+}
+
+.small-line {
+  width: 100px;
+  border: $line-decoration;
+  margin-bottom: 30px;
+}
+
+.content-subtitle {
+  @include main-text(24px, 400, #666666, 1.5em);
+}
+
+.socials {
+  width: 135px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.content-paragraph {
+  @include main-text(14px, 500, #333333, 1.71em);
+  margin-bottom: 20px;
+}
+
+.decore {
+  width: 50px;
+  height: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.rectangle-1 {
+  width: 10px;
+  height: 4px;
+  background-color: $gold-color;
+}
+
+.rectangle-2 {
+  width: 20px;
+  height: 4px;
+  background-color: $gold-color;
+}
+
+.rectangle-3 {
+  width: 10px;
+  height: 4px;
+  background-color: $gold-color;
+}
+
+.button {
+  @include button;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

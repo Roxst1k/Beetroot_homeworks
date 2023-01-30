@@ -1,0 +1,49 @@
+@import "variable";
+
+@mixin button {
+  width: 118px;
+  height: 24px;
+  border: $line-decoration;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+
+}
+
+@mixin main-text($font-size,$font-weight, $color, $line-height){
+  font-family: $main-font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: center;
+  color: $color;
+}
+
+
+@mixin header-text ($font-size, $line-height, $color) {
+  font-family: $header-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  text-align: center;
+}
+
+@mixin big-line {
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: gold;
+  position: relative;
+  display: inline-block;
+}
+
+@mixin background-line {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
