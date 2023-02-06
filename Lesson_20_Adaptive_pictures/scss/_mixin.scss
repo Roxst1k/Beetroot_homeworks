@@ -1,0 +1,24 @@
+@import url(_variable.scss);
+
+@mixin fontRedhot ($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-family: $heading-font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $heading-color;
+}
+
+@mixin fontLato ($font-weight, $font-size, $line-height, $letter-spacing, $font-color) {
+  font-family: $text-font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $font-color;
+}
+
+@mixin flexend {
+  display: flex;
+  justify-content: space-between;
+}
