@@ -1,0 +1,80 @@
+@import "animate.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #565656;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #565656;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 2250px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 1 20%;
+  margin: 0 auto;
+  &__body {
+    height: 100%;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    transform-style: preserve-3d;
+  }
+
+  &__front, &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+  }
+
+  &__back {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__body {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  &__text {
+      font-weight: bold;
+      font-size: 32px;
+      color: green;
+      text-align: center;
+  }
+}
