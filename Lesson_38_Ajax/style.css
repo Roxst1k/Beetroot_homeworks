@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search{
+    width: 60%;
+    margin: 5px auto 5px;
+    padding: 25px;
+    background-color: cornflowerblue;
+    border-radius: 50px;
+}
+
+.search__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Magneto,sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 280px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    padding-left: 10px;
+}
+
+#search:hover,
+#search:focus{
+    box-shadow: 5px 0 10px 0 white;
+}
+
+.select {
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.button {
+    width: 40%;
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    font-family: "Book Antiqua",sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 2px 0 grey;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.result {
+    font-family: "Century Gothic", sans-serif;
+    background-color: cornflowerblue;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    display: none;
+    margin-bottom: 100px;
+}
+
+#title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#actors{
+    margin-bottom: 20px;
+}
+
+#movie-image {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.movies {
+    margin: 0;
+    padding: 10px;
+}
+
+.film-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="search" >
+            <h2 class="search__title">Search</h2>
+            <form action="" method="get" class="form" id=myForm">
+                <div class="wrapper">
+                    <label>
+                        <input type="text" name="search" id="search">
+                    </label>
+                    <select class="select">
+                        <option>movie</option>
+                        <option>series</option>
+                        <option>episode</option>
+                    </select>
+                </div>
+                <button type="button" class="button">Search</button>
+            </form>
+        </section>
+        <section class="result">
+            <img src="" alt="" id="movie-image">
+            <p id="title" class="title"></p>
+            <p id="actors"></p>
+            <p id="awards"></p>
+        </section>
+    </div>
+
+    <section class="movies">
+        <div id="movies"></div>
+        <div>
+            <button id="prevButton">Prev</button>
+            <span id="page"></span>
+            <button id="nextButton">Next</button>
+        </div>
+        <span id="total"></span>
+    </section>
+
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

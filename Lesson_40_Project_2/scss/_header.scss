@@ -1,0 +1,147 @@
+@import "mixin";
+.header {
+  width: 100%;
+  height: 800px;
+  // не працює як потрібно, якось криво
+  background-image:
+          linear-gradient(243.43deg, rgba(126, 90, 255, 0.8), rgba(85, 183, 255,0.2)),
+          url('../img/header/tu_tram_pham.jpg');
+  background-size: cover;
+  padding-top: 53px;
+  margin-bottom: 100px;
+
+
+  &__navigation {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 100px;
+  }
+
+  &__content {
+    max-width: 95%;
+    height: 380px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    opacity: 0.7;
+    background: transparent;
+    position: absolute;
+    left: 48%;
+    top: 650px;
+
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: all 50ms ease 50ms;
+    }
+  }
+}
+
+.navigation-list {
+  width: 515px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    list-style-image: url("../img/header/ellipse.svg");
+
+    &:hover {
+      list-style-image: url("../img/header/ellipse_active.svg");
+    }
+  }
+
+  & a {
+    @include navigationText;
+    text-decoration: none;
+    position: relative;
+    }
+
+}
+
+.socials {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials img:hover {
+  transform: scale(1.5);
+  transition: all 50ms ease 50ms;
+  cursor: pointer;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.my-Swiper-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.my-swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide {
+  &__title {
+    @include titleText;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    @include titleText;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22em;
+    letter-spacing: 0.3em;
+  }
+}
+
+.my-swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-pagination-bullet  {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+
+

@@ -1,0 +1,40 @@
+@mixin navigationText {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28em;
+  color: #FFFFFF;
+}
+
+@mixin titleText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.22em;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+@mixin sectionTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.22em;
+  color: #2C4058;
+}
+
+@mixin sectionSubtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.22em;
+  color: #2C4058;
+}
+
+@mixin textParagraph {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67em;
+  color: #2C4058;
+}

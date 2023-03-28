@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-screen {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 70px;
+}
+
+.swiper1 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.welcome-screen__image {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    z-index: 2;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.22em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F8F1EA;
+    margin-bottom: 50px;
+}
+
+.welcome-screen__button {
+    width: 227px;
+    height: 52px;
+    border: 2px solid #F8F1EA;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.welcome-screen__button:hover {
+    background: #F16A50;
+    border: 2px solid #F16A50;
+    cursor: url("/img/cursor.svg"), pointer;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: rgba(248, 241, 234, 0.7);
+}
+
+.swiper-pagination-bullet-active {
+    background: #F16A50;
+}
+
+.new-arrivals {
+    max-width: 1320px;
+    margin: 0 auto 70px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.new-arrivals__tittle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+/*.mySwiper2 {*/
+/*    position: relative;*/
+/*}*/
+
+.swiper-wrapper-guitar {
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+.guitar-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.guitar-card__status {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2em;
+    text-align: center;
+    color: #F8F1EA;
+    background-color: #F16A50;
+    display: block;
+    padding: 4px 5.5px;
+    align-self: flex-start;
+}
+
+.guitar-card__status-sold {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    display: block;
+    padding: 4px 15.5px;
+    align-self: flex-start;
+    background: #F8F1EA;
+}
+
+.guitar-card__image {
+    margin-bottom: 10px;
+}
+
+.guitar-card__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25em;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.guitar-card__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+}
+
+.swiper-button-lock {
+    display: block;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    content: none;
+}
+/* відмічає чомусь кнопку*/
+
+.swiper-button-next svg {
+    transform: rotateY(180deg);
+}
+
+.swiper-button-next-welcome-screen {
+    width: 40px;
+    height: 74px;
+    top: 285px;
+    right: -20px;
+}
+
+.swiper-button-prev-welcome-screen {
+    width: 40px;
+    height: 74px;
+    top: 285px;
+    left: -50px;
+}
+
+.swiper-button-next-welcome-screen:hover,
+.swiper-button-prev-welcome-screen:hover {
+    cursor: url("/img/cursorBlack.svg"), pointer;
+}
+
+.swiper-button-next-welcome-screen:hover svg path,
+.swiper-button-prev-welcome-screen:hover svg path{
+    fill: tomato;
+}
+
+.new-arrivals__button {
+    margin: 0 auto;
+    width: 227px;
+    height: 52px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22em;
+    text-transform: uppercase;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 15px 57px;
+}
+
+.new-arrivals__button:hover {
+    background: #F16A50;
+    border: 2px solid #F16A50;
+    cursor: url("/img/cursorBlack.svg"), pointer;
+    color: white;
+}
+
+.our-partners {
+    width: 100%;
+    background-color: #F8F1EA;
+    padding: 70px 40px;
+    position: relative;
+}
+
+.our-partners__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+
+}
+
+.mySwiper3 {
+    max-width: 1186px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.our-partners-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.our-partners-slide {
+    text-align: center;
+}
+
+.swiper-button-next-partners{
+    width: 40px;
+    height: 74px;
+    top: 165px;
+    right: 80px;
+}
+
+.swiper-button-prev-partners{
+    width: 40px;
+    height: 74px;
+    top: 165px;
+    left: 60px;
+}
+
+.swiper-button-next-partners:hover,
+.swiper-button-prev-partners:hover {
+    cursor: url("/img/cursorBlack.svg"), pointer;
+}
+
+.swiper-button-next-partners:hover svg path,
+.swiper-button-prev-partners:hover svg path{
+    fill: tomato;
+}
