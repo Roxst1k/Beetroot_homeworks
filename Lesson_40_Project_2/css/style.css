@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1600px;
 }
@@ -315,6 +319,7 @@
   cursor: pointer;
   background-color: #55b7ff;
   color: #FFFFFF;
+  border: none;
 }
 
 .section__title {
@@ -485,6 +490,14 @@
           transform: rotate(90deg);
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 40px;
+}
+
+.gallery {
+  margin-bottom: 150px;
+}
+
 .my-gallery {
   width: 1170px;
   margin: 0 auto 60px;
@@ -534,6 +547,14 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  position: relative;
+}
+
+.hover-effect {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  display: block;
 }
 
 .item_2 {
@@ -579,4 +600,268 @@
 .item_5:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.item_1:hover .hover-effect {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal__box {
+  max-width: 800px;
+  padding: 45px;
+  z-index: 1;
+  margin: 30px 15px;
+  background-color: white;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  position: relative;
+}
+
+.modal__box img {
+  width: 600px;
+  height: 600px;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal__box {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.gallery-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+}
+.contact-card {
+  position: absolute;
+  bottom: -165px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 770px;
+  height: 450px;
+  background-image: url("../img/contact/city.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: bottom;
+  padding: 60px;
+  -webkit-box-shadow: 1px 3px 25px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 3px 25px 0 rgba(0, 0, 0, 0.75);
+}
+.contact-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-card-text {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact__title {
+  margin-bottom: 42px;
+}
+
+.contact-card-text a {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.22em;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56em;
+  color: #000000;
+  letter-spacing: normal;
+  text-decoration: none;
+}
+
+.contact-card-text a:hover {
+  border-bottom: 1px solid black;
+  color: #7E5AFF;
+}
+
+.contact-card-text i {
+  display: inline-block;
+  margin-right: 5px;
+  color: #7E5AFF;
+}
+
+.form {
+  width: 310px;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.22em;
+  color: #2C4058;
+  font-size: 16px;
+  width: 310px;
+  height: 41px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.form input:focus {
+  border-color: black;
+  outline: none;
+}
+
+.form-button {
+  width: 140px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.22em;
+  color: #2C4058;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #2C4058;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.form-button:hover {
+  cursor: pointer;
+  background-color: #55b7ff;
+  color: #FFFFFF;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  height: 549px;
+  background: url("../img/footer/background.jpg");
+  padding: 203px;
+}
+.footer-wrapper {
+  width: 770px;
+  height: 112px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-text {
+  width: 241px;
+  height: 112px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyrights {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.22em;
+  color: #2C4058;
+  font-size: 14px;
+  line-height: 1.21em;
+  color: #FFFFFF;
+}
+
+.socials-footer {
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials-footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.socials-footer img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 50ms ease 50ms;
+  transition: all 50ms ease 50ms;
+  cursor: pointer;
 }
